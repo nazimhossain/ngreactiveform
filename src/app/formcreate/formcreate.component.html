@@ -1,0 +1,61 @@
+<div class="container" >
+ 
+    <form  [formGroup]= "signupForm" (ngSubmit) ="onSubmit()">
+  <div class="field">
+    <label for="cname">Control Name</label>
+    <div class="control">
+      <input class="input is-primary" type="text" 
+      placeholder="Primary input"
+       id="cname"  formControlName="name">
+    </div>
+   </div>
+    <p>Control Type</p>
+   
+       <div class="select">
+     
+        <select formControlName ="select">
+          <option>Select  </option>
+          <option>radio</option>
+          <option>checkbox</option>
+          <option >Text</option>
+          <option >Text -Area</option>
+          <option >File</option>
+         
+  
+        </select>
+    
+      </div>
+      <div class="field">
+          <label for="cp">Control Placeholder</label>
+        <div class="control">
+          <input class="input is-primary" id ="cp" type="text" placeholder="Primary input" formControlName="placeholder">
+        </div>
+      </div>
+      <p>Sort Order</p>
+      <input class="input is-primary" type="number" step="1" fomrControlName="points">
+  
+     <div>
+        <label class="checkbox">
+            <input type="checkbox" formControlName="checkbox">
+            Required
+          </label>
+     </div>
+  
+    <p>Status</p>
+     <div class="select">
+        
+        <select formControlName="select1">
+          <option>Active</option>
+          <option>InActive</option>
+        </select>
+      </div> 
+    <div class="field">
+      <div class="control">
+        <button class="button is-primary">Submit</button>
+      </div>
+    </div>
+     
+  
+  </form>
+
+  </div>    
